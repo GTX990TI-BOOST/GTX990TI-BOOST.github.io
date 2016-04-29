@@ -1,13 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Listen的主页</title>
+	<link href="./images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<script src="./js/main.js" type="text/javascript"></script>
+	<link href="./css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <script>
-    
-    alert('hoho');
-  </script>
+	<div class="head">
+		<div class="head_top">
+			<img src="./images/fsd.png" class="left">
+			<img src="./images/ljb.png" class="right">
+		</div>
+		<div class="head_bottom">
+			<ul>
+				<li>
+					<div><img src="./images/head/ajax.jpg" alt=""></div>
+					<div>用户体验</div>
+				</li>
+				<li>
+					<div><img src="./images/head/css.jpg" alt=""></div>
+					<div>动画</div>
+				</li>
+				<li>
+					<div><img src="./images/head/php.jpg" alt=""></div>
+					<div>使用广泛</div>
+				</li>
+				<li>
+					<div><img src="./images/head/mysql.jpg" alt=""></div>
+					<div>免费</div>
+				</li>
+				<li>
+					<div><img src="./images/head/ps.jpg" alt=""></div>
+					<div>美观</div>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="me">
+			<div class="top">
+				<div>Me</div>
+				<img src="./images/top_ico/ico_me.png" alt="">
+			</div>
+			<div class="meContent">
+				<div class="cover_wrap">
+					<div class="cover" onclick="window.location.replace('3d.html')">More</div>
+				</div>
+				<div class="meIntro">
+					<dl>
+						<dt>姓名</dt>
+						<dd>李嘉宾</dd>
+						<dt>性别</dt>
+						<dd>男</dd>
+						<dt>籍贯</dt>
+						<dd>湖南益阳桃江</dd>
+						<dt>职业</dt>
+						<dd>码农</dd>
+						<dt>喜好</dt>
+						<dd>研究新技术</dd>
+						<dt>最喜欢CPU</dt>
+						<dd>Xeon L5420</dd>
+						<dt>最喜欢游戏</dt>
+						<dd>古剑，仙剑，轩辕剑</dd>
+						<dt>最喜欢语言</dt>
+						<dd>C</dd>
+						<dt>最喜欢软件</dt>
+						<dd>AIDA64</dd>
+						<dt>最喜欢系统</dt>
+						<dd>Linux</dd>
+						<dt>最喜欢编辑器</dt>
+						<dd>Sublime</dd>
+						<dt>最喜欢浏览器</dt>
+						<dd>Chrome</dd>
+						<dt>最喜欢的文章</dt>
+						<dd>任正非：致新员工书</dd>
+						<dt>格言</dt>
+						<dd>You never know how strong you are until being strong is the only choice you have!</dd>
+					</dl>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="education">
+			<div class="top">
+				<div>Education</div>
+				<img src="./images/top_ico/ico_edu.png" alt="">
+			</div>
+			<div>
+				<table align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="white">
+					<tr height="360">
+						<td width="500">
+							<div class="change">
+								<img src="./images/csu0.jpg" alt="" id="main_pic">
+							</div>
+							<div class="thumb" id="thumb">
+								<img src="./images/csu0.jpg" alt="" onmouseover="picture_on(0)" onmouseout="picture_next_on(0)" class="on">
+								<img src="./images/csu1.jpg" alt="" onmouseover="picture_on(1)" onmouseout="picture_next_on(1)">
+								<img src="./images/csu2.jpg" alt="" onmouseover="picture_on(2)" onmouseout="picture_next_on(2)">
+								<img src="./images/csu3.jpg" alt="" onmouseover="picture_on(3)" onmouseout="picture_next_on(3)">
+								<img src="./images/csu4.jpg" alt="" onmouseover="picture_on(4)" onmouseout="picture_next_on(4)">
+								<div class="clear"></div>
+							</div>
+						</td>
+						<td width="500">
+							<div class="backgroundPosition">2014毕业于中南大学，授予学士学位。中南大学坐落在中国历史文化名城湖南省长沙市，是中央直管、教育部直属的湖南省唯一副部级全国重点大学，国家“211工程”、“985工程”、“2011计划”首批重点建设的大学，是“111计划”、“卓越工程师教育培养计划”、“卓越医生教育培养计划”、“卓越法律人才教育培养计划”入选高校，是教育部、工业和信息化部、湖南省三方重点共建大学。<div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="top">
+				<div>Skill</div>
+				<img src="./images/top_ico/ico_skill.png" alt="">
+			</div>
+			<div class="skillContent">
+				<div>
+					<div class="w90">HTML5</div>
+					<p>精通：热爱前端制做，擅于制作精美页面，熟悉页面架构和布局，响应式设计，能够解决各种浏览器兼容性问题。代码规范，符合W3C标准。</p>
+				</div>
+				<div>
+					<div class="w90">CSS3</div>
+					<p>精通：前端利器，要做得狂拽酷炫必须要的元素，现在会动起来的网页才叫真正的页面，喜欢简单有效整洁样式，让轻快浏览器跑起来。</p>
+				</div>
+				<div>
+					<div class="w90">Javascript</div>
+					<p>精通：傲娇的前端工程师都写原生JS，一门面向对象的脚本语言。操作DOM，BOM对象，犀利算法。原生代码的比任何插件跑起来溜。</p>
+				</div>
+				<div>
+					<div class="w80">jQuery</div>
+					<p>精通：方便易用，兼容性好，开发必备。</p>
+				</div>
+				<div>
+					<div class="w60">Python</div>
+					<p>熟练：配合django做高性能WEB后台</p>
+				</div>
+				<div>
+					<div class="w60">PHP</div>
+					<p>熟练：工作时学的第一门后台语言</p>
+				</div>
+				<div>
+					<div class="w60">MySql</div>
+					<p>熟练：Sql Server上课时没学会，Mysql工作中却学了不少</p>
+				</div>
+				<div>
+					<div class="w60">Linux(Shell)</div>
+					<p>熟练：SUSE,Ubuntu,Redhat比较喜欢的发行版</p>
+				</div>
+				<div>
+					<div class="w60">Photoshop</div>
+					<p>熟练：闲时修一修图</p>
+				</div>
+				<div>
+					<div class="w60">Dos(BAT)</div>
+					<p>精通：比较古老的东西，不过装大神必备</p>
+				</div>
+				<div>
+					<div class="w80">Window(Ghost,PE)</div>
+					<p>精通：深刻了解操作系统的安装及优化，定制自己的预安装环境</p>
+				</div>
+				<div>
+					<div class="w80">C</div>
+					<p>熟练：大学除了汇编就只学了这个玩意，究级程序员语言</p>
+				</div>
+				<div>
+					<div class="w60">VB</div>
+					<p>熟练：简单制作Windows应用</p>
+				</div>
+				<div>
+					<div class="w70">VBScript</div>
+					<p>熟练：IE曾经流行的脚本语言</p>
+				</div>
+				<div>
+					<div class="w90">PC Hardware</div>
+					<p>大神：狂热的机算机硬件爱好者，图拉丁!</p>
+				</div>
+			</div>
+		</div>
+		<div class="work">
+			<div class="top">
+				<div>Work</div>
+				<img src="./images/top_ico/ico_work.png" alt="">
+			</div>
+			<div class="workContent">
+				<div>
+					<div>
+						<div><img src="./images/work_arr.png" alt=""></div>
+						<div>盛阳科技</div>
+					</div>
+					<p>智慧酒店引领者，全球星级酒店数字服务解决方案的顶级提供商。我在这里遇到人生的贵人涛哥，大神中的战斗机，也是一个好Leader。涛哥教了我许多东西。我没走的时候，就问我工作找得怎么样了，我走了还教我在新我公司怎么办。泪流。主要是SunBoss系统的维护，版本更新</p>
+				</div>
+				<div>
+					<div>
+						<div><img src="./images/work_arr.png" alt=""></div>
+						<div>网宿科技</div>
+					</div>
+					<p>国内领先的互联网业务平台提供商，主要向客户提供内容分发与加速、服务器托管与租用等互联网业务平台解决方案，是中国最大的CDN及IDC综合服务提供商。刚开始接触了下java、structs，后面开始制做用Python做为后端的前端，一个云计算的前端。主要是做了异步的问题</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="top">
+				<div>Contact</div>
+				<img src="./images/top_ico/ico_con.png" alt="">
+			</div>
+			<div class="contactContent">
+				<a href="mailto:cmd2015@520.com?subject=给你主页提个建议&body=你好，看了你的网页后！~~"><img src="./images/email.png" alt=""></a>
+				<a href="tencent://message/?uin=2469968400"><img src="./images/qq.png" alt=""></a>
+				<a href="http://www.baidu.com/baidu?word=码农" target="_blank"><img src="./images/baidu.png" alt=""></a>
+			</div>
+		</div>	
+	</div>
+	<div class="footer">Copyright &copy;2015 JiaBinLi All Rights Reserved</div>
+	<div class="scrollTop" id="scrollTop"></div>
+	<div id="contextMenu">
+		<ul onclick="play_pause_music()">
+			<li id="music">&nbsp;</li>
+			<li id="music_status">暂停音乐</li>
+		</ul>
+		<ul onclick="change_music()">
+			<li>&nbsp;</li>
+			<li>换一首歌</li>
+		</ul>
+		<ul onclick="location.reload()">
+			<li id="refresh">&nbsp;</li>
+			<li>刷新页面</li>
+		</ul>
+		<ul onclick="document.body.scrollTop=document.body.scrollHeight">
+			<li id="man">&nbsp;</li>
+			<li>联系我</li>
+		</ul>
+	</div>
+	<audio autoplay="autoplay" loop="loop" id="music_audio"></audio>
 </body>
 </html>
