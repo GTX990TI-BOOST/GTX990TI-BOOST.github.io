@@ -35,40 +35,40 @@ body{
 	position: absolute;
 	left: 130px;
 	top: 90px;
-	-webkit-animation: top_left .7s linear 0.1s 1;
-	animation: top_left .7s linear 0.1s 1;
+	-webkit-animation: top_left 2s linear 1s infinite;
+	animation: top_left 2s linear 1s infinite;
 }
 @-webkit-keyframes top_left{
-	10%{
+	3%{
 		transform: translateY(-20px);
+	}
+	6%{
+		transform: translateY(0px);
+	}
+	9%{
+		transform: translateY(10px);
+	}
+	12%{
+		transform: translateY(-10px);
 	}
 	20%{
-		transform: translateY(0px);
-	}
-	50%{
-		transform: translateY(0px);
-	}
-	60%{
-		transform: translateY(-20px);
-	}
-	70%{
 		transform: translateY(0px);
 	}
 }
 @keyframes top_left{
-	10%{
+	3%{
 		transform: translateY(-20px);
+	}
+	6%{
+		transform: translateY(0px);
+	}
+	9%{
+		transform: translateY(10px);
+	}
+	12%{
+		transform: translateY(-10px);
 	}
 	20%{
-		transform: translateY(0px);
-	}
-	50%{
-		transform: translateY(0px);
-	}
-	60%{
-		transform: translateY(-20px);
-	}
-	70%{
 		transform: translateY(0px);
 	}
 }

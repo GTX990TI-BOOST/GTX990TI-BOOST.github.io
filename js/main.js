@@ -37,16 +37,16 @@ window.document.ondragstart=function(){
 
 //scroll up down
 window.onscroll=function(){
-	var scroll=document.body.scrollTop;
-	var e=document.getElementById('scrollTop');
-	if(scroll>200){
-		e.className="scrollTopOn";
+	var scroll = document.body.scrollTop;
+	var e = document.getElementById('scrollTop');
+	if (scroll > 200) {
+		e.className = "scrollTopOn";
 		e.onclick=function(){
-			document.body.scrollTop=0
+			body.go(0);
 		};
-	}else{
-		e.className="scrollTop";
-		e.onclick=void 0;
+	} else {
+		e.className = "scrollTop";
+		e.onclick = void 0;
 	}
 }
 

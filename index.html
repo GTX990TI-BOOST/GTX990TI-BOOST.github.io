@@ -233,7 +233,7 @@
 			<li id="refresh">&nbsp;</li>
 			<li>刷新页面</li>
 		</ul>
-		<ul onclick="document.body.scrollTop=document.body.scrollHeight">
+		<ul id="contact_me">
 			<li id="man">&nbsp;</li>
 			<li>联系我</li>
 		</ul>
@@ -241,3 +241,47 @@
 	<audio autoplay="autoplay" loop="loop" id="music_audio"></audio>
 </body>
 </html>
+
+<script>
+  
+  function ease(el){
+    this.el = el;
+    this.target = 0;
+    this.position = 0;
+    this.speed = .1;
+    this.status = false;
+    var that = this;
+    this.move = function(){
+      var delta = (this.target - this.position) * this.speed;
+      if(delta == 0){
+        this.status = false;
+      } else if(this.status){
+        delta = delta > 0 ? Math.ceil(delta) : Math.floor(delta);
+        this.position += delta;
+        this.draw();
+      }
+    }
+    this.go = function(x){
+
+      if(typeof x == 'number' && x <= this.el.scrollHeight - document.documentElement.clientHeight && x >= 0){
+        this.status = true;
+        this.target = x;
+        this.position = this.el.scrollTop;
+        this.move();
+      }
+    }
+    this.draw = function(){
+      this.el.scrollTop = this.position;
+      setTimeout(function(){
+        that.move();
+      },20);
+    }
+    this.el.addEventListener('mousewheel', function(){
+      that.status = false;
+    })
+  }
+  var body = new ease(document.body);
+  document.all.contact_me.onclick = function(){
+    body.go(document.body.scrollHeight - document.documentElement.clientHeight);
+  }
+</script>
