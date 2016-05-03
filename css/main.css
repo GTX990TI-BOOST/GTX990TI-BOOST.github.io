@@ -90,7 +90,7 @@ body{
 		top: 180px;
 	}
 	body{
-		min-height: 700px;
+		min-height: 600px;
 	}
 }
 .head_bottom ul{
@@ -121,7 +121,7 @@ body{
 	width: 100px;
 	height: 100px;
 }
-.head_bottom ul li>div:nth-child(1){
+.head_bottom ul li>div:first-child{
 	position: absolute;
 	top: 50px;
 	width: 100px;
@@ -129,7 +129,7 @@ body{
 	margin-left: -50px;
 	left: 50%;
 }
-.head_bottom ul li>div:nth-child(2){
+.head_bottom ul li>div:last-child{
 	position: absolute;
 	left: 50%;
 	margin-left: -80px;
