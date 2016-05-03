@@ -141,6 +141,7 @@ function init_picture(){
 	}
 
 	picture_on(0);
+	delay_time();
 }
 
 function init_music(){
