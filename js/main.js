@@ -151,27 +151,26 @@ function init_music(){
 		]
 	}
 
+	var audio = document.getElementById('music_audio');
+	var status = document.getElementById('music_status');
+
 	function play_pause_music(){
-		var e = document.getElementById('music_audio');
-		var e_c = document.getElementById('music_status');
-		if(e.src == ""){
-			e.src = "./music/" + music.song[music.now];
-		}
-		if(e.paused){
-			e.play();
-			e_c.innerText="暂停音乐";
+		if(!audio.src)
+			audio.src="./music/"+music.song[music.now];
+		if(audio.paused){
+			audio.play();
+			status.innerText="暂停音乐";
 		}else{
-			e.pause();
-			e_c.innerText="播放音乐";
+			audio.pause();
+			status.innerText="播放音乐";
 		}
 	}
 
 	function change_music()
 	{
-		music.now++;
-		if(music.now==music.song.length)music.now=0;
-		document.getElementById('music_status').innerText="暂停音乐";
-		document.getElementById('music_audio').src="./music/"+music.song[music.now];
+		music.now = ++music.now % music.song.length
+		audio.src="./music/"+music.song[music.now];
+		audio.play();
 	}
 
 	document.all.music_control.onclick = play_pause_music;
