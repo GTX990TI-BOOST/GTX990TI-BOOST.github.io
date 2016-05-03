@@ -154,6 +154,9 @@ function init_music(){
 	function play_pause_music(){
 		var e = document.getElementById('music_audio');
 		var e_c = document.getElementById('music_status');
+		if(e.src == ""){
+			e.src = "./music/" + music.song[music.now];
+		}
 		if(e.paused){
 			e.play();
 			e_c.innerText="暂停音乐";
