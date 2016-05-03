@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="renderer" content="webkit">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Listen的主页</title>
+	<title>Listen的个人主页</title>
 	<link href="./images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 	<script src="./js/main.js" type="text/javascript"></script>
 	<link href="./css/main.css" rel="stylesheet" type="text/css">
@@ -45,12 +45,10 @@
 		<div class="me">
 			<div class="top">
 				<div>Me</div>
-				<img src="./images/top_ico/ico_me.png" alt="">
+				<img src="./images/ico/ico_me.png" alt="">
 			</div>
 			<div class="meContent">
-				<div class="cover_wrap">
-					<div class="cover" onclick="window.location.replace('3d.html')">More</div>
-				</div>
+				<div class="mePic"></div>
 				<div class="meIntro">
 					<dl>
 						<dt>姓名</dt>
@@ -89,7 +87,7 @@
 		<div class="education">
 			<div class="top">
 				<div>Education</div>
-				<img src="./images/top_ico/ico_edu.png" alt="">
+				<img src="./images/ico/ico_edu.png" alt="">
 			</div>
 			<div>
 				<table align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="white">
@@ -99,11 +97,11 @@
 								<img src="./images/csu0.jpg" alt="" id="main_pic">
 							</div>
 							<div class="thumb" id="thumb">
-								<img src="./images/csu0.jpg" alt="" onmouseover="picture_on(0)" onmouseout="picture_next_on(0)" class="on">
-								<img src="./images/csu1.jpg" alt="" onmouseover="picture_on(1)" onmouseout="picture_next_on(1)">
-								<img src="./images/csu2.jpg" alt="" onmouseover="picture_on(2)" onmouseout="picture_next_on(2)">
-								<img src="./images/csu3.jpg" alt="" onmouseover="picture_on(3)" onmouseout="picture_next_on(3)">
-								<img src="./images/csu4.jpg" alt="" onmouseover="picture_on(4)" onmouseout="picture_next_on(4)">
+								<img src="./images/csu0.jpg" alt="" class="on">
+								<img src="./images/csu1.jpg" alt="">
+								<img src="./images/csu2.jpg" alt="">
+								<img src="./images/csu3.jpg" alt="">
+								<img src="./images/csu4.jpg" alt="">
 								<div class="clear"></div>
 							</div>
 						</td>
@@ -118,7 +116,7 @@
 		<div class="skill">
 			<div class="top">
 				<div>Skill</div>
-				<img src="./images/top_ico/ico_skill.png" alt="">
+				<img src="./images/ico/ico_skill.png" alt="">
 			</div>
 			<div class="skillContent">
 				<div>
@@ -132,14 +130,6 @@
 				<div>
 					<div class="w90">Javascript</div>
 					<p>精通：傲娇的前端工程师都写原生JS，一门面向对象的脚本语言。操作DOM，BOM对象，犀利算法。原生代码的比任何插件跑起来溜。</p>
-				</div>
-				<div>
-					<div class="w80">jQuery</div>
-					<p>精通：方便易用，兼容性好，开发必备。</p>
-				</div>
-				<div>
-					<div class="w60">Python</div>
-					<p>熟练：配合django做高性能WEB后台</p>
 				</div>
 				<div>
 					<div class="w60">PHP</div>
@@ -157,73 +147,55 @@
 					<div class="w60">Photoshop</div>
 					<p>熟练：闲时修一修图</p>
 				</div>
-				<div>
-					<div class="w60">Dos(BAT)</div>
-					<p>精通：比较古老的东西，不过装大神必备</p>
-				</div>
-				<div>
-					<div class="w80">Window(Ghost,PE)</div>
-					<p>精通：深刻了解操作系统的安装及优化，定制自己的预安装环境</p>
-				</div>
-				<div>
-					<div class="w80">C</div>
-					<p>熟练：大学除了汇编就只学了这个玩意，究级程序员语言</p>
-				</div>
-				<div>
-					<div class="w60">VB</div>
-					<p>熟练：简单制作Windows应用</p>
-				</div>
-				<div>
-					<div class="w70">VBScript</div>
-					<p>熟练：IE曾经流行的脚本语言</p>
-				</div>
-				<div>
-					<div class="w90">PC Hardware</div>
-					<p>大神：狂热的机算机硬件爱好者，图拉丁!</p>
-				</div>
 			</div>
 		</div>
 		<div class="work">
 			<div class="top">
 				<div>Work</div>
-				<img src="./images/top_ico/ico_work.png" alt="">
+				<img src="./images/ico/ico_work.png" alt="">
 			</div>
 			<div class="workContent">
 				<div>
 					<div>
 						<div><img src="./images/work_arr.png" alt=""></div>
-						<div>盛阳科技</div>
+						<div class="title">title</div>
 					</div>
-					<p>智慧酒店引领者，全球星级酒店数字服务解决方案的顶级提供商。我在这里遇到人生的贵人涛哥，大神中的战斗机，也是一个好Leader。涛哥教了我许多东西。我没走的时候，就问我工作找得怎么样了，我走了还教我在新我公司怎么办。泪流。主要是SunBoss系统的维护，版本更新</p>
+					<p>description</p>
 				</div>
 				<div>
 					<div>
 						<div><img src="./images/work_arr.png" alt=""></div>
-						<div>网宿科技</div>
+						<div class="title">title</div>
 					</div>
-					<p>国内领先的互联网业务平台提供商，主要向客户提供内容分发与加速、服务器托管与租用等互联网业务平台解决方案，是中国最大的CDN及IDC综合服务提供商。刚开始接触了下java、structs，后面开始制做用Python做为后端的前端，一个云计算的前端。主要是做了异步的问题</p>
+					<p></p>
 				</div>
-				<div class="clear"></div>
+				<div>
+					<div>
+						<div><img src="./images/work_arr.png" alt=""></div>
+						<div class="title">title</div>
+					</div>
+					<p>description</p>
+				</div>
 			</div>
 		</div>
 		<div class="contact">
 			<div class="top">
 				<div>Contact</div>
-				<img src="./images/top_ico/ico_con.png" alt="">
+				<img src="./images/ico/ico_con.png" alt="">
 			</div>
 			<div class="contactContent">
-				<a href="mailto:cmd2015@520.com?subject=给你主页提个建议&body=你好，看了你的网页后！~~"><img src="./images/email.png" alt=""></a>
+				<a href="mailto:2469968400@qq.com?subject=非常高兴认识你&body=说点啥呢！~~"><img src="./images/email.png" alt=""></a>
 				<a href="tencent://message/?uin=2469968400"><img src="./images/qq.png" alt=""></a>
-				<a href="http://www.baidu.com/baidu?word=码农" target="_blank"><img src="./images/baidu.png" alt=""></a>
+				<a href="http://www.baidu.com/baidu?word=中南大学" target="_blank"><img src="./images/baidu.png" alt=""></a>
 			</div>
 		</div>	
 	</div>
-	<div class="footer">Copyright &copy;2015 JiaBinLi All Rights Reserved</div>
+	<div class="footer">Copyright &copy;2016 JiaBinLi All Rights Reserved</div>
 	<div class="scrollTop" id="scrollTop"></div>
 	<div id="contextMenu">
 		<ul onclick="play_pause_music()">
 			<li id="music">&nbsp;</li>
-			<li id="music_status">暂停音乐</li>
+			<li id="music_status">开始音乐</li>
 		</ul>
 		<ul onclick="change_music()">
 			<li>&nbsp;</li>
@@ -238,50 +210,6 @@
 			<li>联系我</li>
 		</ul>
 	</div>
-	<audio autoplay="autoplay" loop="loop" id="music_audio"></audio>
+	<audio loop="loop" id="music_audio" preload="preload"></audio>
 </body>
 </html>
-
-<script>
-  
-  function ease(el){
-    this.el = el;
-    this.target = 0;
-    this.position = 0;
-    this.speed = .1;
-    this.status = false;
-    var that = this;
-    this.move = function(){
-      var delta = (this.target - this.position) * this.speed;
-      if(delta == 0){
-        this.status = false;
-      } else if(this.status){
-        delta = delta > 0 ? Math.ceil(delta) : Math.floor(delta);
-        this.position += delta;
-        this.draw();
-      }
-    }
-    this.go = function(x){
-
-      if(typeof x == 'number' && x <= this.el.scrollHeight - document.documentElement.clientHeight && x >= 0){
-        this.status = true;
-        this.target = x;
-        this.position = this.el.scrollTop;
-        this.move();
-      }
-    }
-    this.draw = function(){
-      this.el.scrollTop = this.position;
-      setTimeout(function(){
-        that.move();
-      },20);
-    }
-    this.el.addEventListener('mousewheel', function(){
-      that.status = false;
-    })
-  }
-  var body = new ease(document.body);
-  document.all.contact_me.onclick = function(){
-    body.go(document.body.scrollHeight - document.documentElement.clientHeight);
-  }
-</script>

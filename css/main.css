@@ -143,32 +143,15 @@ body{
 	 margin: auto;
 	 width:900px;
 }
-.cover_wrap{
+.mePic{
 	float: left;
 	height: 390px;
 	width: 390px;
 	border-radius: 50%;
 	position: relative;
-	cursor: pointer;
 	box-shadow: 0 0 1px 1px rgb(15,168,244);
 	background-image: url(../images/me.jpg);
 	background-position: center center;
-}
-.cover{
-	border-radius: 50%;
-	text-align: center;
-	color: rgb(15,168,244);
-	font-size: 100px;
-	line-height: 390px;
-	width: 390px;
-	background-color: rgba(15,168,244,.3);
-	transform: rotateY(90deg);
-	opacity: 1;
-	transition: all 0.3s ease;
-}
-.cover_wrap:hover .cover{
-	transform: rotateY(0deg);
-	opacity: 1;
 }
 .meIntro{
 	float: right;
@@ -214,8 +197,8 @@ body{
 	margin-right: 20px;
 	font-size: 22px;
 	text-align: left;
-	animation: backgroundPosition 2s linear 0s infinite;
 	-webkit-animation: backgroundPosition 2s linear 0s infinite;
+	animation: backgroundPosition 2s linear 0s infinite;
 }
 @-webkit-keyframes backgroundPosition{
 	from{
@@ -249,9 +232,9 @@ body{
 .skill .skillContent>div>div{
 	background-color: rgb(15,168,244);
 	font-size: 30px;
-	border-radius: 10px;
+	border-radius: 8px;
 	text-indent: 20px;
-	transition: all ease 1s;
+	transition: all ease .6s;
 }
 .skill .skillContent>div:hover{
 	max-height: 100px;
@@ -280,73 +263,34 @@ body{
 	background-color: rgb(15,168,244);
 }
 .workContent{
-	margin-left: 25%;
-	margin-right: 25%;
 	text-align: center;
+	min-width: 1250px;
 }
-@media(max-width:1600px){
-	.workContent{
-		margin-left: 20%;
-		margin-right: 20%;
-		text-align: center;
-	}
-}
-.workContent>div:nth-child(1){
-	float: left;
+.workContent>div{
+	display: inline-block;
+	vertical-align: top;
 	width: 250px;
 	background-color: white;
 	height: 350px;
 	padding: 0 40px;
 	border-radius: 5px;
-}
-.workContent>div:nth-child(2){
-	float: right;
-	width: 250px;
-	background-color: white;
-	height: 350px;
-	padding: 0 40px;
-	border-radius: 5px;
+	margin: 0 40px;
 }
 .workContent img{
 	vertical-align: top;
 }
-.workContent>div:hover>div{
-	animation: Shake 2s infinite linear;
-	-webkit-animation: Shake 2s infinite linear;
+.workContent>div>div{
+	-webkit-transform-origin: center top;
 	transform-origin: center top;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
 }
-@keyframes Shake{
-	15%{
-		transform: rotate(3deg);
-	}
-	25%{
-		transform: rotate(3deg);
-	}
-	65%{
-		transform: rotate(-3deg);
-	}
-	75%{
-		transform: rotate(-3deg);
-	}
+.workContent>div:hover>div{
+	transform: rotateY(360deg);
 }
-@-webkit-keyframes Shake{
-	15%{
-		-webkit-transform: rotate(3deg);
-	}
-	25%{
-		-webkit-transform: rotate(3deg);
-	}
-	65%{
-		-webkit-transform: rotate(-3deg);
-	}
-	75%{
-		-webkit-transform: rotate(-3deg);
-	}
-}
-.workContent>div>div>div:nth-child(2){
+.workContent div.title{
 	background-color: rgb(15,168,244);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	line-height: 44px;
 	border-radius: 5px 5px 0 0;
 	font-size: 22px;
 	font-weight: 400;
@@ -361,7 +305,7 @@ body{
 }
 .contactContent a{
 	display: inline-block;
-	width: 10%;
+	width: 13%;
 	min-width: 120px;
 }
 .contactContent a img{
@@ -370,7 +314,7 @@ body{
 	transition: .2s ease;
 }
 .contactContent a img:hover{
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 .footer{
 	background-color:rgb(15,168,244);
@@ -382,22 +326,22 @@ body{
 .scrollTop{
 	position: fixed;
 	bottom: 25px;
-	right: 20px;
+	right: -10px;
 	background-image: url(../images/arr.png);
 	width: 32px;
 	height: 32px;
-	transition: opacity .5s ease;
+	transition: .5s ease;
 	opacity: 0;
 }
 .scrollTopOn{
-	opacity: 1;
 	position: fixed;
 	bottom: 25px;
-	right: 20px;
+	right: 10px;
 	background-image: url(../images/arr.png);
 	width: 32px;
 	height: 32px;
-	transition: opacity .5s ease;
+	transition: .5s ease;
+	opacity: 1;
 }
 .change{
 	padding: 2px;
@@ -455,6 +399,8 @@ body{
 #contextMenu li:first-child{
 	width: 24px;
 	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 #contextMenu li:last-child{
 	width: 163px;
@@ -462,16 +408,10 @@ body{
 }
 #man{
 	background-image: url(../images/man.png);
-	background-position: center center;
-	background-repeat: no-repeat;
 }
 #refresh{
 	background-image: url(../images/refresh.png);
-	background-position: center center;
-	background-repeat: no-repeat;
 }
 #music{
 	background-image: url(../images/music.png);
-	background-position: center center;
-	background-repeat: no-repeat;
 }
